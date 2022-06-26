@@ -1,7 +1,10 @@
 /* Variaveis de css */
 :root {
     --input-linear: linear-gradient(120deg, #E75590, #00C2CB);
+    --input-error: red;
     --button-linear: linear-gradient(120deg, #E75590, #00C8CB, #E75590);
+    --button-disabled: #acacac;
+    --button-success: rgb(18, 151, 107);
     --white: #fff;
     --black: #303030;
     --gray: #929292;
@@ -80,6 +83,14 @@ body {
     width: 100%;
 }
 
+.login_input_border.error {
+    background-color: var(--input-error);
+}
+
+.login_input_border.error::after {
+    background-color: var(--input-error);
+}
+
 .login_submit{
     height: 48px;
     width: 100%;
@@ -96,8 +107,21 @@ body {
     transition: .5s ease-in-out;
 }
 
+.login_submit:disabled {
+    background: var(--button-disabled);
+    cursor: not-allowed;
+}
+
 .login_submit:hover {
     background-position: right;
+}
+
+.login_submit.error {
+    background: var(--input-error);
+}
+
+.login_submit.success {
+    background: var(--button-success);
 }
 
 .login_reset {
