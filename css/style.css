@@ -1,8 +1,8 @@
 /* Variaveis de css */
 :root {
-    --input-linear: linear-gradient(120deg, #E75590, #00C2CB);
+    --input-linear: linear-gradient(147deg, #000000 0%, #434343 74%);;
     --input-error: red;
-    --button-linear: linear-gradient(120deg, #E75590, #00C8CB, #E75590);
+    --button-linear: linear-gradient(147deg, #000000 0%, #434343, #000000 74%);
     --button-disabled: #acacac;
     --button-success: rgb(18, 151, 107);
     --white: #fff;

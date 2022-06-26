@@ -60,10 +60,13 @@ const init = () => {
                     password: inputPassword.value
                 })
             }).then((response) => {
+                debugger
                 if (response.status != 200) {
                     errorHandler()
+                } else {
+                    successHandler()
                 }
-                successHandler()
+                
             }).catch(() => {
                 errorHandler();
             })
